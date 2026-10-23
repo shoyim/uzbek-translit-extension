@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="uz">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>O'zbek transliterator</title>
+  <link rel="stylesheet" href="popup.css">
+</head>
+<body>
+  <header>
+    <h1>O'zbek transliterator</h1>
+    <p class="sub">Lotin · Kirill · Yangi lotin (2026)</p>
+  </header>
+
+  <label class="field-label" for="input">Matn</label>
+  <textarea id="input" placeholder="Matnni shu yerga yozing yoki qo'ying…" autofocus></textarea>
+
+  <div class="modes" role="group" aria-label="O'girish yo'nalishi">
+    <button type="button" class="mode" data-mode="cyrillic">Kirillga</button>
+    <button type="button" class="mode" data-mode="latin">Lotinga</button>
+    <button type="button" class="mode is-active" data-mode="newlatin">Yangi lotinga</button>
+  </div>
+
+  <label class="field-label" for="output">Natija</label>
+  <textarea id="output" readonly placeholder="Natija shu yerda chiqadi"></textarea>
+
+  <div class="actions">
+    <button type="button" id="copy">Nusxa olish</button>
+    <button type="button" id="swap" title="Natijani kirish maydoniga o'tkazish">↑ Natijani tepaga</button>
+    <button type="button" id="clear" class="ghost">Tozalash</button>
+  </div>
+
+  <footer>
+    <span id="status" aria-live="polite"></span>
+    <a href="https://github.com/shoyim/latin-to-cyrillic" target="_blank" rel="noopener">github.com/shoyim</a>
+  </footer>
+
+  <script src="converter.js"></script>
+  <script src="popup.js"></script>
+</body>
+</html>

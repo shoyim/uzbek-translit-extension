@@ -1,0 +1,20 @@
+{
+  "manifest_version": 3,
+  "name": "O'zbek transliterator — Lotin / Kirill / Yangi lotin",
+  "version": "1.0.0",
+  "description": "O'zbek matnini Lotin, Kirill va yangi (2026) lotin alifbolari o'rtasida o'giradi. To'liq offline, internetsiz ishlaydi.",
+  "action": {
+    "default_popup": "popup.html",
+    "default_title": "O'zbek transliterator",
+    "default_icon": {
+      "16": "icons/icon16.png",
+      "48": "icons/icon48.png",
+      "128": "icons/icon128.png"
+    }
+  },
+  "icons": {
+    "16": "icons/icon16.png",
+    "48": "icons/icon48.png",
+    "128": "icons/icon128.png"
+  }
+}
